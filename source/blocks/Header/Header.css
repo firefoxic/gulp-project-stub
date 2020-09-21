@@ -1,0 +1,6 @@
+.Header {
+  box-sizing: var(--box-sizing);
+  background: url("../../assets/images/cat.svg") left center no-repeat;
+  background-size: contain;
+  padding-left: 50px;
+}
