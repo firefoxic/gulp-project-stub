@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<style>
+			rect,
+			line { shape-rendering: crispEdges; }
+			svg .icon { display: none; }
+			svg .icon:target { display: inline; }
+		</style>
+	</defs>
+	<svg viewBox="0 0 16 16">
+		<g id="chart" class="icon">
+			<rect x="6" width="4" height="16"/>
+			<rect x="12" y="4" width="4" height="12"/>
+			<rect x="0" y="8" width="4" height="8"/>
+		</g>
+	</svg>
+	<svg viewBox="0 0 16 16">
+		<g id="plus" class="icon">
+			<mask id="m" x="0" y="0" width="1" height="1">
+				<circle cx="8" cy="8" r="8" fill="white"/>
+				<line x1="8" y1="3" x2="8" y2="13" stroke="black" stroke-width="2"/>
+				<line x1="3" y1="8" x2="13" y2="8" stroke="black" stroke-width="2"/>
+			</mask>
+			<rect width="16" height="16" mask="url(#m)"/>
+		</g>
+	</svg>
+	<svg viewBox="0 0 20 20">
+		<g class="icon" id="phone">
+			<path fill-rule="evenodd" d="M14.646 7.146a.5.5 0 01.708 0l2.5 2.5a.5.5 0 010 .708l-2.5 2.5a.5.5 0 01-.708-.708l1.647-1.646H9a.5.5 0 010-1h7.293l-1.647-1.646a.5.5 0 010-.708zM3.48 3.48C3.174 3.783 3 4.163 3 4.5v11c0 .337.174.717.479 1.021.304.305.684.479 1.021.479H7v-4H4.5a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5H7V3H4.5c-.337 0-.717.174-1.021.479zM7.5 2a.5.5 0 01.5.5v5a.5.5 0 01-.5.5H5v4h2.5a.5.5 0 01.5.5v5a.5.5 0 01-.5.5h-3c-.663 0-1.283-.326-1.729-.771C2.326 16.783 2 16.163 2 15.5v-11c0-.663.326-1.283.771-1.729C3.217 2.326 3.837 2 4.5 2h3z"/>
+		</g>
+	</svg>
+	<svg class="icon" id="email" viewBox="0 0 20 20">
+		<path fill-rule="evenodd" d="M10 13.5l-9-7V4h18v2.5l-9 7zm8-7.49l-8 6.223-8-6.222V5h16v1.01zM1 9v8h18V9h-1v7H2V9H1z"/>
+	</svg>
+</svg>

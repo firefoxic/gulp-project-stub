@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="Page" lang="ru">
+{% include "Root/Root.njk" %}
+<body class="Page-Body">
+
+	{% include 'Header/Header.njk' %}
+
+	<main>
+		{{ content | safe }}
+
+	<section class="left">
+		{% block left %}{% endblock %}
+	</section>
+
+	<section class="right">
+		{% block right %}
+		This is more content
+		{% endblock %}
+	</section>
+	</main>
+
+	{% include 'Aside/Aside.njk' %}
+	{% include 'Nav/Nav.njk' %}
+	{% include 'Footer/Footer.njk' %}
+
+</body>
+</html>

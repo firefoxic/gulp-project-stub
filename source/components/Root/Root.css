@@ -1,0 +1,24 @@
+@font-face {
+	font-family: Vollkorn;
+	src: url(../../assets/fonts/Vollkorn-VariableFont_wght-subset.woff2) format("woff2");
+	font-style: normal;
+	font-weight: 400 900;
+	font-stretch: 100%;
+	font-variant: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Vollkorn;
+	src: url(../../assets/fonts/Vollkorn-Italic-VariableFont_wght-subset.woff2) format("woff2");
+	font-style: italic;
+	font-weight: 400 900;
+	font-stretch: 100%;
+	font-variant: normal;
+	font-display: swap;
+}
+
+:root {
+	--text-color-base: hsl(0deg 0% 20%);
+	--main-font-family: vollkorn;
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="Page" lang="ru">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Шаблон главной страницы</title>
+	<link rel="icon" href="./assets/favicon/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="./assets/favicon/180.png">
+	<link rel="manifest" href="./manifest.webmanifest">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="./styles/styles.css"/>
+	<script type="module" src="./scripts/index.js"></script>
+</head>
+
+<body class="Page-Body">
+
+<nav>
+	<ul>
+		<li><a class="Link" href="./index.html" aria-current="page">На главную страницу</a></li>
+		<li><a class="Link" href="./inner.html">На внутреннюю страницу</a></li>
+		<li><a class="Link" href="./test.html">На тестовую страницу</a></li>
+	</ul>
+</nav>
+
+<header class="Header">
+	<h1>Главная страница</h1>
+</header>
+
+	<p>Через <i>mask</i> в стилях</p>
+	<span class="icon icon-email"></span>
+	<span class="icon icon-phone"></span>
+
+	<p>Через <i>use</i> в разметке</p>
+	<svg class="use-email" width="40" height="40"><use href="./icons/stack.svg#Header--email"/></svg>
+	<svg class="use-phone" width="40" height="40"><use href="./icons/stack.svg#Header--phone"/></svg>
+
+	<p>Через <i>img</i> в разметке</p>
+	<img src="./icons/stack.svg#Header--email" width="40" height="40">
+	<img src="./icons/stack.svg#Header--phone" width="40" height="40">
+
+<main>
+	<h2>Заголовок 2 уровня</h2>
+	<h3>Заголовок 3 уровня</h3>
+	<h4>Заголовок 4 уровня</h4>
+	<h5>Заголовок 5 уровня</h5>
+	<h6>Заголовок 6 уровня</h6>
+	<p>Длинный параграф. К изучению обязателен. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quia non distinctio tempora inventore. Nulla est quis eaque doloribus! Omnis, unde temporibus nesciunt nulla! Voluptate id iure ullam quisquam enim.</p>
+	<section>
+		<h2>Заголовок 2 уровня внутри секции</h2>
+		<p>Длинный параграф под заголовком внутри секции. К изучению противопоказан. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta saepe excepturi, amet velit corrupti nihil natus voluptatum sapiente ipsa, delectus labore placeat temporibus nam pariatur autem quas! Fugiat, nobis, officia.</p>
+		<section>
+			<h3>Заголовок 3 уровня внутри секции</h3>
+			<p>Длинный параграф под заголовком внутри секции. К изучению противопоказан. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est, ipsam deserunt repellat, doloremque cumque et ab fugit. Expedita atque enim reiciendis placeat rem nesciunt corporis neque illum voluptatem laudantium!</p>
+			<section>
+				<h4>Заголовок 4 уровня внутри секции</h4>
+				<p>Длинный параграф под заголовком внутри секции. К изучению противопоказан. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore laboriosam eos qui est quaerat perferendis voluptatibus blanditiis quia earum impedit facilis eius architecto explicabo unde, laudantium, maxime! Distinctio, deleniti, possimus?</p>
+				<section>
+					<h5>Заголовок 5 уровня внутри секции.</h5>
+					<p>Длинный параграф под заголовком внутри секции. К изучению противопоказан. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde vero ut doloribus cumque voluptate a, esse ad facere repellat natus temporibus iusto quis libero error deserunt quibusdam aut nesciunt ab.</p>
+					<section>
+						<h6>Заголовок 6 уровня внутри секции</h6>
+						<p>Длинный параграф под заголовком внутри секции. К изучению противопоказан. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae officia a libero, ratione molestiae iusto dolorem fugiat, laboriosam temporibus ab consequatur ducimus impedit dicta exercitationem aperiam earum repellat neque est?</p>
+					</section>
+				</section>
+			</section>
+		</section>
+	</section>
+</main>
+
+<footer>Контакты, или что вы хотели найти в подвале… варенье может :)</footer>
+
+</body>
+
+</html>

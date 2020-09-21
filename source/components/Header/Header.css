@@ -1,0 +1,72 @@
+.Header {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 20px;
+	box-sizing: var(--box-sizing);
+}
+
+.icon {
+	--icon-email: url(./email.svg);
+	--icon-phone: url(./phone.svg);
+	--accent-h: 218.54deg;
+	--accent-s: 79.19%;
+	--accent-l: 66.08%;
+	--accent-o: 1;
+	--accent-color:
+		hsl(
+			var(--accent-h)
+			var(--accent-s)
+			var(--accent-l)
+			/
+			var(--accent-o)
+		);
+
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border: 0;
+	margin: 4px;
+}
+
+.icon-email {
+	mask: var(--icon-email);
+	background-color: var(--accent-color);
+}
+
+.icon-email:hover {
+	--accent-l: 56.08%;
+}
+
+.icon-phone {
+	mask: var(--icon-phone);
+	background-color: greenyellow;
+}
+
+.use-email {
+	margin: 4px;
+	fill: hsl(51, 77%, 46%);
+}
+
+.use-phone {
+	margin: 4px;
+	fill: seagreen;
+}
+
+img {
+	margin: 4px;
+}
+
+h1 {
+	font-weight: 700;
+}
+
+h1::before {
+	/* content: url(../../icons/stack.svg#Header--phone); */
+
+	/* content: ""; */
+
+	content: url(../../static/assets/images/patterns/berry-bg.jpg);
+	display: block;
+	width: 40px;
+	height: 40px;
+}

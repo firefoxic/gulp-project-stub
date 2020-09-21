@@ -1,0 +1,19 @@
+{
+	"extends": "stylelint-config-standard",
+	"rules": {
+		"indentation": "tab",
+		"comment-empty-line-before": [
+			"always",
+			{
+				"except": [
+					"first-nested"
+				],
+				"ignore": [
+					"after-comment",
+					"stylelint-commands"
+				]
+			}
+		],
+		"length-zero-no-unit": null
+	}
+}

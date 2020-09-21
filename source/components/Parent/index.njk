@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Шаблон тестовой страницы</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/index.css"/>
+	<script type="module" src="./scripts/index.js"></script>
+</head>
+<body>
+
+{% block header %}
+Это контент по умолчанию!!!
+{% endblock %}
+
+<section class="left">
+	{% block left %}{% endblock %}
+</section>
+
+<section class="right">
+	{% block right %}
+	This is more content
+	{% endblock %}
+</section>
+
+</body>
+</html>
