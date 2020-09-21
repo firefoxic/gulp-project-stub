@@ -1,0 +1,66 @@
+{
+	"private": true,
+	"type": "module",
+	"browserslist": [
+		"last 2 version",
+		"not ie <=11",
+		"not dead",
+		"not op_mini all",
+		"not < 0.25%"
+	],
+	"babel": {
+		"ignore": [
+			"node_modules/**/*"
+		],
+		"presets": [
+			"@babel/preset-env"
+		]
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.2.5",
+		"browser-sync": "^2.26.14",
+		"del": "^6.0.0",
+		"esbuild": "^0.11.8",
+		"gulp": "^4.0.2",
+		"gulp-cached": "^1.1.1",
+		"gulp-data": "^1.3.1",
+		"gulp-esbuild": "^0.7.2",
+		"gulp-newer": "^1.4.0",
+		"gulp-nunjucks-render": "^2.2.3",
+		"gulp-postcss": "^9.0.0",
+		"gulp-remember": "^1.0.1",
+		"postcss": "^8.2.10",
+		"postcss-csso": "^5.0.1",
+		"postcss-custom-media": "^8.0.0",
+		"postcss-import": "^14.0.1",
+		"postcss-logical": "^4.0.2",
+		"postcss-media-minmax": "^5.0.0",
+		"postcss-url": "^10.1.3",
+		"standardx": "^7.0.0",
+		"stylelint": "^13.12.0",
+		"stylelint-config-standard": "^21.0.0"
+	},
+	"scripts": {
+		"start": "gulp --continue",
+		"build": "gulp buildProject",
+		"prod": "NODE_ENV=production gulp buildProject",
+		"lint:scripts": "standardx source/**/*.js",
+		"lint:styles": "stylelint source/**/*.css",
+		"lint": "npm run lint:styles && npm run lint:scripts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/firefoxic/gulp-project-stub.git"
+	},
+	"keywords": [
+		"gulp",
+		"template",
+		"project"
+	],
+	"author": "firefoxic",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/firefoxic/gulp-project-stub/issues"
+	},
+	"homepage": "https://github.com/firefoxic/gulp-project-stub#readme"
+}

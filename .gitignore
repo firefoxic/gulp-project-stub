@@ -1,0 +1,6 @@
+dist/
+node_modules/
+raw/
+*.psd
+*.ai
+*.pdf

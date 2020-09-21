@@ -1,0 +1,13 @@
+.Page-Body {
+	--page-line-height: 3.2rem;
+	--page-font-size: calc(var(--page-line-height) / 1.6);
+
+	box-sizing: var(--box-sizing);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	/* font-size: calc(var(--page-line-height) / 1.6); */
+	/* line-height: var(--page-line-height); */
+	font-weight: 400;
+}
